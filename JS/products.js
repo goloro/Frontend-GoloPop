@@ -25,7 +25,7 @@ function cargarProductos(products) {
         var div = `                                
         <div class="item">
             <div class="itemTop">
-                <img loading="lazy" src="${product.image}">
+                <img loading="lazy" alt="productImage" src="${product.image}">
             </div>
             <div class="itemBot">
                 <div class="itemBotInfo">
@@ -35,7 +35,7 @@ function cargarProductos(products) {
                 <div class="itemBotBuy">
                     <p class="itemBotPrice">${product.price}$</p>
                     <div id="${product._id}" class="itemBotAddCart">
-                        <img id="${product._id}" class="imgAddCart" src="https://api.iconify.design/ic/baseline-add-shopping-cart.svg?color=%23f8f8f8">
+                        <img id="${product._id}" class="imgAddCart" alt="iconBuy" src="https://api.iconify.design/ic/baseline-add-shopping-cart.svg?color=%23f8f8f8">
                     </div>
                 </div>
             </div>
