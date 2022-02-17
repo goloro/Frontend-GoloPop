@@ -1,8 +1,3 @@
-// IMPORTS
-import RequestHandler from "./requestHandler.js"
-
-// VARIABLES CONST
-const requestHandler = new RequestHandler()
 // MENU
 const Login = document.getElementById("Login")
 const SignUp = document.getElementById("SignUp")
