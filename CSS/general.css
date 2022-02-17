@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: #0C1F2E;
+    display: flex;
+    width: 100%;
+    height: 7.5vh;
+}
+.navContent {
+    margin: auto 0 auto 0;
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+#logoNav {
+    margin: auto 0 auto 2%;
+}
+#logoNav img {
+    width: 60%;
+    max-width: 100%;
+}
+.searchDiv {
+    display: flex;
+    margin: auto 0 auto 20%;
+    border-radius: 5px;
+    background-color: white;
+    height: 70%;
+    width: 30%;
+}
+.searchDiv img {
+    margin: auto 2.5% auto 2.5%;
+    height: 90%;
+}
+.searchDiv input {
+    margin: auto 0 auto 0;
+    border: 0;
+    height: 80%;
+    width: 85%;
+}
+.searchDiv input:focus {
+    outline: none;
+}
+.navBotons {
+    display: flex;
+    margin: 0 0 0 auto;
+    width: 10%;
+    color: white;
+}
+.navBotons a, div{
+    display: flex;
+    margin: auto 0 auto 0;
+}
+.navBotons a img, div img {
+    margin: auto 0 auto 0;
+}
+.user {margin-left: auto; margin-right: 20%; cursor: pointer;}
+#shopping-cart {margin-left: auto; margin-right:auto;}
+.menu {
+    margin-top: 40px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    right: 2%;
+    border-radius: 5px;
+    z-index: 3;
+}
+.menu a {
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.menu a img {
+    margin: 0 10% 0 0%;
+    vertical-align: middle;
+}
+.show {
+    display: block;
+}
+#Profile, #Logout {display: none;}
+
+/* LOGIN SIGN UP */
+.LSContainer {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Images/caja_funko_pop.jpg");
+    background-size: cover;
+    background-color: white;
+    position: absolute;
+    width: 450px;
+    height: 600px;
+    top: calc(35% - 210px);
+    left: calc(50% - 225px);
+    z-index: 3;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#loginContainer, #signUpContainer {display: none;}
+.closeLS {
+    position: absolute;
+    right: 0;
+    margin: 0.25%;
+    width: 4.5%;
+    cursor: pointer;
+}
+#LSName {
+    margin: 7% 0 10% 6%;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3rem;
+}
+.LSContainer form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3.5% 0 auto;
+    width: 70%;
+    height: 50%;
+}
+.LSinputContainer {
+    width: 85%;
+    margin: auto;
+    background-color: #454545;
+    padding: 3% 0 3% 0; 
+    border-radius: 3px;
+}
+.LSinputContainer img {
+    width: 10%;
+    margin: auto 6% auto 3%;
+}
+.LSinputContainer input {
+    width: 100%;
+    margin: auto 4% auto 0%;
+    border: none;
+    padding: 2% 0 2% 2%;
+}
+.LSinputContainer input:focus {
+    outline: none;
+}
+.LSButton {
+    cursor: pointer;
+    margin: 0 auto 0 auto;
+    width: 40%;
+    padding: 3% 0 3% 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #454545;
+    border: 1px solid #454545;
+    color: white;
+}
+.LSButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#problems {
+    display: none;
+    position: absolute;
+    width: 20%;
+    height: 10vh;
+    background-color: firebrick;
+    top: 15vh;
+    left: 10vh;
+    border-radius: 10px;
+}
+#thing {
+    margin: auto;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}

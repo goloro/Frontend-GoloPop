@@ -1,0 +1,276 @@
+.bodyContent {
+    display: flex;
+    height: 92.5vh;
+    background-color: #0C1F2E;
+}
+.ProfileDiv {
+    margin: auto;
+    background-color: #FAFAFA;
+    width: 90%;
+    height: 90%;
+    box-shadow: (0 2px 5px rgba(0, 0, 0, 0.2));
+}
+.menuProfile {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    background-color: #454545;
+}
+.menuProfile div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menuTop {height: 60%;}
+.menuTop img {
+    margin: auto;
+    height: 60%;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+.menuTop h1 {
+    margin: auto;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.menuBot {height: 40%;}
+.buttonsBot {
+    cursor: pointer;
+    margin: auto;
+    padding: 4% 0 4% 0;
+    border-radius: 10px;
+    border: 1px solid #F7FAFB;
+    width: 50%;
+    background-color: #F7FAFB;
+    font-size: large;
+    font-family: 'Rubik', sans-serif;
+}
+#buttonBotPorfile {
+    background-color: #f7fafb44;
+    color: white;
+}
+.contentProfile {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.contentProfileProfile {
+    margin: auto;
+    width: 80%;
+    height: 90%;
+}
+.contentProfileProfile form {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin: auto;
+}
+.contentProfileProfile form div {
+    margin: auto;
+}
+.LSinputContainer p {
+    width: 100%;
+    margin: auto 4% auto 0%;
+    border: none;
+    padding: 2% 0 2% 2%;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: medium;
+    cursor: pointer;
+}
+#returnEdit, #returnEdit2 {
+    position: absolute;
+    width: 1%;
+    margin: 0.5%;
+    cursor: pointer;
+}
+#addCardIcon, #addAddressIcon {
+    position: absolute;
+    width: 1%;
+    margin: 0.5%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+.cardView, .addressView {
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    height: 95%;
+    background-color: #0C1F2E;
+}
+.addCard, .editCardDiv, .addAddressDiv, .editAddressDiv {
+    display: flex; 
+    /* display: none; */
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+    width: 30%;
+    height: 40%;
+    margin: auto;
+}
+.editCardDiv {
+    display: none;
+}
+.editAddressDiv {
+    display: none;
+}
+.addCard h2, .editCardDiv h2, .addAddressDiv h2, .editAddressDiv h2  {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    margin: 0 auto 0 auto;
+    height: 10%;
+}
+.addCard label, .editCardDiv label, .addAddressDiv label, .editAddressDiv label {
+    width: 100%;
+    margin: 2% 0 2% 2%;
+    color: black;
+    font-size: small;
+    font-family: 'Red Hat', sans-serif;
+}
+.addCard input, .editCardDiv input, .addAddressDiv input, .editAddressDiv input {
+    padding: 2% 1% 2% 1%;
+    border-radius: 5px;
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+}
+.addCard input:focus, .editCardDiv input:focus, .addAddressDiv input:focus, .editAddressDiv input:focus {
+    outline: none;
+}
+.topCardPro {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    margin-top: 5%;
+}
+.cardNumber input {
+    width: 15%;
+}
+.botCardPro {
+    display: flex;
+    height: 45%;
+}
+.botCardPro div {
+    display: flex;
+    flex-direction: column;
+}
+.cardCVV {
+    margin-left: 1%;
+}
+.cardCVV input {
+    width: 40%;
+    margin-left: 8%;
+}
+.cardED {
+    margin: auto 3% auto auto;
+}
+.cardED div {
+    display: flex;
+    flex-direction: row;
+}
+.cardED input {
+    width: 30%;
+}
+.cardOwner {
+    margin-bottom: 5%;
+    width: 95%;
+}
+.addCard button, .editCardDiv button, .addAddressDiv button, .editAddressDiv button {
+    cursor: pointer;
+    width: 40%;
+    margin: auto;
+    padding: 2% 0 2% 0;
+    border-radius: 5px;
+    border: 1px solid #0C1F2E;
+    background-color: #0C1F2E;
+    color: white;
+}
+.addCard button:hover, .editCardDiv button:hover, .addAddressDiv button:hover, .editAddressDiv button:hover {
+    background-color: transparent;
+    color: black;
+}
+.allItems, .allItemsAddress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 94%;
+    height: 50%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    gap: 5%;
+    padding: 0 2% 0 2%;
+}
+.itemPro {
+    height: 80%;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e44f4f;
+    color: white;
+    border-radius: 10px;
+}
+.itemPro div {
+    display: flex;
+}
+#titulo {
+    margin: auto auto auto 5%;
+    font-weight: 2px;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.campoNormal {
+    margin: auto 5% auto auto;
+    font-size: 18px;
+    font-family: 'Dongle', sans-serif;
+}
+.menuOculto {
+    width: 100%;
+}
+.menuOculto img {
+    cursor: pointer;
+    margin: 0.5% auto 0 auto;
+}
+
+.contentProfileOrders {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.itemPed {
+    height: 80%;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e44f4f;
+    color: white;
+    border-radius: 10px;
+}
+.itemPed div {
+    display: flex;
+}
+#productosPedido2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    width: 90%;
+    margin: auto;
+}
+#prPed {
+    background-color: #0C1F2E;
+    height: 80%;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 10px;
+}

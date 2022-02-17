@@ -1,0 +1,142 @@
+#shopping-cart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2%;
+    cursor: pointer;
+}
+
+/* BODY CONTENT */
+.bodyContent {
+    display: flex;
+}
+.bodyContentIzq {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.bodyContentDer {
+    display: block;
+    height: 92.5vh;
+    position: fixed;
+    right: 0;
+    width: 20%;
+}
+.tramitBuy {
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    margin: 60% auto 60% auto;
+    width: 60%;
+    height: 40%;
+    background-color: #0C1F2E;
+    border-radius: 10px;
+}
+.tramitBuy p, .tramitBuy label{
+    margin: auto;
+    font-family: 'Red Hat', sans-serif;
+    color: white;
+}
+.tramitBuy div {margin: auto;}
+.tramitBuy div select:focus {outline: none;}
+#order {
+    font-family: 'Baloo Bhai 2', cursive; 
+    font-size: xx-large;
+    margin: 5% auto 0 auto;
+}
+#tramitBuyBtn {
+    cursor: pointer;
+    width: 50%;
+    padding: 4% 0 4% 0;
+    margin: auto auto 5% auto;
+    border: 2px solid #5FD780;
+    background-color: #5FD780;
+    border-radius: 10px;
+}
+#tramitBuyBtn:hover {
+    background-color: #5fd7818c;
+}
+
+/* TITULO CART */
+#titCart {
+    margin: 3% auto 3% auto;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* PRODUCTOS CARRITO */
+#productsCarrito {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.itemCarrito {
+    display: flex;
+    width: 50%;
+    height: 28vh;
+    background-color: white;
+    margin: 0 auto 5% auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.itemCarritoImg {
+    display: flex;
+    height: 100%;
+    width: 20%;
+}
+.itemCarritoImg img {
+    margin: 1% auto 1% auto;
+    height: 98%
+}
+.itemCarritoInfo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 0 0 5%;
+}
+.itemCarritoInfo div {display: flex;}
+.itemCarritoInfo div div {
+    width: 85%; 
+    display: flex; 
+    flex-direction: column;
+}
+.itemCarritoInfo div div p {
+    margin: 2% 0 0 0;
+    font-family: 'Red Hat', sans-serif;
+}
+#carritoName {font-size: 1.6rem; margin-left: 2%;}
+#carritoNormalP {font-size: 0.8rem; margin-left: 4%;}
+.carritoPrice {width: 15%; margin: auto 10% auto auto; text-align: right; font-size: 1.75rem; font-family: 'Red Hat', sans-serif;}
+#divBtnCarrito {
+    display: flex;
+}
+.itemCarritoInfo button {
+    display: flex;
+    width: 10%; 
+    height: 70%;
+    padding: 0.25% 2% 0.25% 2%; 
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    margin: 2% 0 0 2%;
+    cursor: pointer;
+}
+.itemCarritoInfo button img {
+    margin: auto;
+}
+.itemCarritoInfo button:hover {
+    box-shadow: 0 1px 1px #f4414191;
+}
+.itemCarritoInfo button:active {
+    transform: translateY(1px);
+}
+.cantidadCarrito {
+    width: 10%;
+    height: 50%;
+    padding: 0.4% 0 0.4% 0;
+    text-align: center;
+    margin: 2% 0 auto 2%;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+.cantidadCarrito:focus {
+    outline: none;
+}

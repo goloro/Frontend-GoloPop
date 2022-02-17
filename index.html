@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GoloPop</title>
+
+        <link rel = "stylesheet" href = "./CSS/index.css">
+        <link rel = "stylesheet" href = "./CSS/general.css">
+        <link rel = "stylesheet" href = "./CSS/style-responsive.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Red+Hat+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="navContent">
+                <a id="logoNav" href="index.html"><img src="/Images/golopop_logo.png"></a>
+                <div class="searchDiv">
+                    <img id="iconSearch" src="https://api.iconify.design/ant-design/search-outlined.svg?color=%23222">
+                    <input id="buscador" type="text" placeholder="Search items..." maxlength="50">
+                </div>
+                <div class="navBotons">
+                    <a id="shopping-cart" href="HTML/shopping.html"><img src="https://api.iconify.design/jam/shopping-cart.svg?color=%23f8f8f8" height="30"></a>
+                    <div class="user">
+                        <a id="user"><img src="https://api.iconify.design/bx/bx-user.svg?color=%23f8f8f8" height="30"></a>
+                        <div id="idMenu" class="menu">
+                            <a id="Login"><img id="loginImg" src="https://api.iconify.design/fe/login.svg?color=%23222" width="18" height="18">Login</a>
+                            <a id="SignUp"><img src="https://api.iconify.design/fe/login.svg?color=%23222" width="18" height="18">Sign Up</a>
+                            <a id="Profile"><img src="https://api.iconify.design/fluent/eye-12-regular.svg?color=%23222" width="18" height="18">Profile</a>
+                            <a id="Logout"><img src="https://api.iconify.design/majesticons/logout-line.svg?color=%23222" width="18" height="18">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bodyContent">
+            <div class="extraNav" id="extraNav">
+                <div class="imgExtraNav" id="imgExtraNav">
+                    <div class="imgExtraNavContent">
+                        <div id="imgPortada"></div>
+                    </div>
+                </div>
+                <div class="marcaExtraNav">
+                    <div class="marcaExtraNavContent" id="marcaExtraNavContent">
+                        <div class="marcaExtraNavContainer">
+                            <img id="marvel" src="Images/Categories/Marvel.png">
+                        </div>
+                        <div class="marcaExtraNavContainer">
+                            <img id="star wars" src="http://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG5.png">
+                        </div>
+                        <div class="marcaExtraNavContainer">
+                            <img id="harry potter" src="https://marcas-logos.net/wp-content/uploads/2019/11/Harry-Potter-Logo-2004-now.png">
+                        </div>
+                        <div class="marcaExtraNavContainer">
+                            <img id="dc comics" src="https://www.pngplay.com/wp-content/uploads/9/DC-Logo-PNG-Background.png">
+                        </div>
+                        <div class="marcaExtraNavContainer">
+                            <img id="la casa de papel" src="/Images/lacasadepapel.png">
+                        </div>
+                        <div class="marcaExtraNavContainer">
+                            <img id="disney" src="https://www.howdeniberia.com/wp-content/uploads/2018/05/Disney-logo-png-transparent-download.png">
+                        </div>
+                        <div class="marcaExtraNavContainer">
+                            <img id="squid game" src="https://www.legoatsportif.com/wp-content/uploads/2021/10/Logo-coreano-el-juego-del-calamar-negro.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filtrador">
+                <div id="inputR">
+                    <input id="filtroR" type="range" min="5" max="50" value="50" list="tickmarks">
+                </div>
+                <div id="filtros">
+                    <div id="filtrosTxt">
+
+                    </div>
+                    <div id="filtrosPr">
+
+                    </div>
+                </div>
+            </div>
+    
+            <div class="products" id="products">
+                
+            </div>
+    
+            <footer>
+                
+            </footer>
+        </div>
+
+        <div class="LSContainer" id="loginContainer">
+            <img class="closeLS" id="closeLogin" src="https://api.iconify.design/ant-design/close-circle-filled.svg?color=%23f44141">
+            <h1 id="LSName">LOGIN</h1>
+            <form name="login" id="login">
+                <div class="LSinputContainer">
+                    <img src="https://api.iconify.design/fluent/mail-16-filled.svg?color=%23f8f8f8">
+                    <input id="loginEmail" type="text" placeholder="email">
+                </div>
+                <div class="LSinputContainer">
+                    <img src="https://api.iconify.design/carbon/password.svg?color=%23f8f8f8">
+                    <input id="loginPassword" type="password" placeholder="password">
+                </div>
+                <button class="LSButton" id="loginButton" type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="LSContainer" id="signUpContainer">
+            <img class="closeLS" id="closeSignUp" src="https://api.iconify.design/ant-design/close-circle-filled.svg?color=%23f44141">
+            <h1 id="LSName">SIGN UP</h1>
+            <form name="signUp" id="signUp">
+                <div class="LSinputContainer">
+                    <img src="https://api.iconify.design/fluent/mail-16-filled.svg?color=%23f8f8f8">
+                    <input id="signUpEmail" type="text" placeholder="email">
+                </div>
+                <div class="LSinputContainer">
+                    <img src="https://api.iconify.design/wpf/name.svg?color=%23f8f8f8">
+                    <input id="signUpName" type="text" placeholder="name">
+                </div>
+                <div class="LSinputContainer">
+                    <img src="https://api.iconify.design/wpf/name.svg?color=%23f8f8f8">
+                    <input id="signUpLastName" type="text" placeholder="lastName">
+                </div>
+                <div class="LSinputContainer">
+                    <img src="https://api.iconify.design/carbon/password.svg?color=%23f8f8f8">
+                    <input id="signUpPassword" type="password" placeholder="password">
+                </div>
+                <div class="LSinputContainer">
+                    <img src="https://api.iconify.design/clarity/date-line.svg?color=%23f8f8f8">
+                    <input id="signUpBirthDay" type="date" placeholder="birthday" min="2004-01-01">
+                </div>
+                <button class="LSButton" id="signUpButton" type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="problems" id="problems">
+            <p id="thing"></p>
+        </div>
+
+        <script type="module" src="JS/users.js"></script>
+        <script type="module" src="JS/products.js"></script>
+    </body>
+</html>

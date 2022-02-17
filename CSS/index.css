@@ -1,0 +1,171 @@
+.bodyContent {
+    display: flex;
+    flex-direction: column;
+}
+.extraNav {
+    display:flex;
+    flex-direction: column;
+    background-color: #0C1F2E;
+    height: 80vh;
+}
+.imgExtraNavContent {display: flex; width: 60%; margin: auto; padding-top: 2vh;}
+#imgPortada {
+    width: 85%; 
+    height: 50vh;
+    margin: auto; 
+    max-width: 85%;
+    animation-name: animacionPortada;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.arrowPortada {width: 5%; cursor: pointer; margin: 0 2% 0 2%;}
+@keyframes animacionPortada {
+    0% {background-image: url("/Images/StarWars-Portada.png");}
+    10% {background-image: url("/Images/StarWars-Portada.png");}
+    30% {background-image: url("/Images/LaCasaDePapel-Portada.png");}
+    40% {background-image: url("/Images/LaCasaDePapel-Portada.png");}
+    50% {background-image: url("/Images/LaCasaDePapel-Portada.png");}
+    70% {background-image: url("/Images/JuegoCalamar-Portada.png");}
+    80% {background-image: url("/Images/JuegoCalamar-Portada.png");}
+    90% {background-image: url("/Images/JuegoCalamar-Portada.png");}
+    100% {background-image: url("/Images/StarWars-Portada.png");}
+}
+.marcaExtraNav {display: flex; width: 100%; height: 10vh; margin: auto;}
+.marcaExtraNavContent {
+    cursor: pointer;
+    display:grid; 
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 5%;
+    width: 98%; 
+    margin: auto;
+    z-index: 0;
+}
+.marcaExtraNavContainer {
+    height: 110%;
+    max-width: 100%;
+    min-width: 100%;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+}
+.marcaExtraNavContainer img {
+    margin: auto;
+    width: 85%;
+    height: 80%;
+}
+
+/* FILTRADOR */
+.filtrador {
+    width: 100%;
+    display: flex;
+    padding: 2% 0 2% 0;
+}
+#inputR {
+    margin: auto;
+}
+#filtros {
+    margin: auto;
+}
+#filtrosTxt div, #filtrosPr div {
+    display: flex;
+    background-color: #0C1F2E;
+    border-radius: 5px;
+    margin: auto;
+    padding: 5px 9px 5px 7px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+#filtrosTxt div p, #filtrosPr div p {
+    margin-right: 2px;
+}
+#filtros img {
+    cursor: pointer;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5%;
+    margin: 3% auto 3% auto;
+    width: 70%;
+    padding: 0 5% 0 5%;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    height: 33vh;
+    background-color: #0C1F2E;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.2);
+}
+.itemTop {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    height: 45%;
+    margin: 5% auto 0 auto;
+    padding: 1%;
+    max-width: 90%;
+    min-width: 90%;
+    overflow: hidden;
+}
+.itemTop img {
+    margin: auto;
+    height: 100%;
+}
+.itemBot {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+.itemBotInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+.itemBot p {
+    text-align: center;
+}
+.itemBotName {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: x-large;
+    max-width: 100%;
+}
+.itemBotCategorie {
+    font-family: 'Molengo', sans-serif;
+    font-size: small;
+}
+.itemBotBuy {
+    display: flex;
+    width: 100%;
+    margin-top: 7%;
+}
+.itemBotPrice {
+    font-family: 'Molengo', sans-serif;
+    font-size: medium;
+    margin: auto auto 8% auto;
+}
+.itemBotAddCart {
+    display: flex;
+    margin: auto auto 5% auto;
+    cursor: pointer;
+    padding: 3% 8% 3% 8%;
+    background-color: #F44141;
+    width: 10%;
+    border-radius: 10px;
+}
+.itemBotAddCart img {
+    margin: auto;
+}
+.itemBotAddCart:hover {
+    box-shadow: 0 1px 1px #f4414191;
+}
+.itemBotAddCart:active {
+    transform: translateY(1px);
+}

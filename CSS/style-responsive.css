@@ -1,0 +1,66 @@
+/* PC PORTATIL */
+@media screen and (max-width: 1500px) and (min-width: 1000px) {
+    #logoNav img {
+        width: 40%;
+        max-width: 40%;
+    }
+    .searchDiv {margin: auto 0 auto 5%;}
+    .navBotons {margin: 0 2% 0 auto;}
+    #shopping-cart {margin: auto 2% auto 0;}
+    .imgExtraNavContent {width: 75%;}
+
+    .products {
+        width: 90%;
+        gap: 2%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item {height: 45vh;}
+
+    .itemCarrito {width: 70%;}
+    .bodyContentIzq {width: 75%;}
+    .bodyContentDer {width: 25%;}
+    .tramitBuy {width: 90%; height: 50%;}
+
+    /* PROFILE */
+    .menuProfile {width: 40%;}
+    .contentProfileProfile form {width: 50%;}
+    .cardView, .addressView {
+        width: 110%;
+        height: 100%;    }
+    .addCard, .editCardDiv, .addAddressDiv, .editAddressDiv {
+        width: 48%;
+        margin: 2% auto 2% auto;
+    }
+    .addCard h2, .editCardDiv h2, .addAddressDiv h2, .editAddressDiv h2  {font-size: 1.25rem;}
+    .addAddressDiv h2, .editAddressDiv h2 {margin-bottom: 5%;}
+    .addCard label, .editCardDiv label, .addAddressDiv label, .editAddressDiv label {
+        font-size: 0.75rem;
+        margin: 1% 0 1% 2%;
+    }
+    .addCard input, .editCardDiv input, .addAddressDiv input, .editAddressDiv input {
+        padding: 1% 0% 1% 0%;
+        margin: 0 auto 0 auto;
+    }
+    .addCard input, .editCardDiv input {margin-bottom: 5%;}
+    .topCardPro {margin-top: 3%;}
+    .botCardPro {height: 50%;}
+    .addCard button, .editCardDiv button {margin: -7% auto 0 auto;}
+    .addAddressDiv button, .editAddressDiv button {margin: 3% auto 0% auto;}
+    .allItems, .allItemsAddress {height: 45%; gap: 2%; border-radius: 10px;}
+    .itemPro {height: 60%; padding: 0.5%;}
+    #titulo {font-size: 10px;}
+    .campoNormal {font-size: 14px;}
+
+    .contentProfileOrders {height: 95%;}
+    #prPed {height: 100%;}
+}
+
+/* TABLET */
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    
+}
+
+/* MOBILE */
+@media screen and (max-width: 800px) {
+
+}
