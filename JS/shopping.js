@@ -203,11 +203,8 @@ document.getElementById("tramitBuyBtn").addEventListener("click", e => {
 
                     if (this.readyState == 4 && this.status == 200) {
                         for (let i=0; i<carrito.length; i++) {
-                            console.log(carrito)
+                            cambiarStock(carrito[i].id, carrito[i].cant)
                         }
-
-                        localStorage.setItem("opcion","order")
-                        window.open("../HTML/profile.html", "_self")
                     }
             
                 }
@@ -226,6 +223,36 @@ document.getElementById("tramitBuyBtn").addEventListener("click", e => {
         document.querySelector(".bodyContent").style.filter = "blur(6px)"
     }
 })
+function cambiarStock(id, cant) {
+    const url = "https://golopop-backend.herokuapp.com/products/" + id
+
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', url, true)
+    xhr.send()
+    xhr.onload = () => {
+        if (xhr.status === 200) {
+            let product = JSON.parse(xhr.response)
+            let newStock = product.stock - cant
+            console.log(newStock)
+
+            const url2 = "https://golopop-backend.herokuapp.com/products/update/" + id
+            const xhr2 = new XMLHttpRequest()
+            xhr2.open('PATCH', url2, true)
+            xhr2.setRequestHeader("content-type", "application/json");
+            xhr2.send(JSON.stringify({
+                stock: newStock,
+            }))
+            xhr2.onreadystatechange = function() {
+        
+                if (this.readyState == 4 && this.status == 200) {
+                    localStorage.setItem("opcion","order")
+                    window.open("../HTML/profile.html", "_self")
+                }
+        
+            }
+        }
+    }
+}
 
 // Cargar tarjetas
 let cards = user.creditCards
