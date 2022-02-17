@@ -202,6 +202,10 @@ document.getElementById("tramitBuyBtn").addEventListener("click", e => {
                 xhr.onreadystatechange = function() {
 
                     if (this.readyState == 4 && this.status == 200) {
+                        for (let i=0; i<carrito.length; i++) {
+                            console.log(carrito)
+                        }
+
                         localStorage.setItem("opcion","order")
                         window.open("../HTML/profile.html", "_self")
                     }
